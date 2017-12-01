@@ -2,7 +2,7 @@
 import os
 import multiprocessing
 
-DEBUG = True
+DEBUG = False
 
 DEFAULT_STYLE = 'pep8'
 """ reformat 기본 코드 스타일.
