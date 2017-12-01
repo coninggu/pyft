@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>PYFT - Online Python Formatter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content="Online Python Formatter.">
+    <meta name="keywords" content="python, editor, formatter, python formatter, python code, online python formatter, parser, python editor, pyft, code beautify, pep8, code style">
+    <meta name="author" content="coninggu">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pyft-min.css') }}">
+</head>
+<body>
+<div>
+    {% block body %}{% endblock %}
+    <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.8.2/umd/popper.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.9/ace.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/mode-python.js"></script>
+    <script src="{{ url_for('static', filename='pyft-min.js') }}"></script>
+</div>
+</body>
+</html>
+

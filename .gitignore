@@ -1,0 +1,7 @@
+*.pyc
+.DS_store
+.cache
+/build
+/dist
+/pyft.egg-info
+

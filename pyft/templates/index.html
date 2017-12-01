@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 title">
+                <h1 class="text-center">Python Code Formatter</h1>
+                <p class="small text-center">PYFT(Python Formatter)는 구글의 오픈소스인 YAPF(<a href="https://github.com/google/yapf" target="_blank">Github</a>)를 활용하여 구현하였습니다.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <Blockquote>편집기에 정리되지 않은 코드를 복사하거나 입력한 이후에 Format 버튼을 클릭하면 선택한 Code Style에 맞추어 Reformat 됩니다.</Blockquote>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <h5>Code Style</h5>
+                <div class="mb-10">
+                    {% for code_style in code_styles %}
+                        <label class="radio-inline">
+                            <input type="radio" name="code_style" value="{{ code_style }}" {% if code_style == 'pep8' %}checked {% endif %}> {{ code_style }}
+                        </label>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="alert alert-danger hide" id="error_alert">
+                    <button type="button" class="close" data-dismiss="alert"><span>×</span></button>
+                    <span id="error_msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-20">
+            <div class="col-xs-12">
+                <pre id="code" class="editor"></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="mb-0">
+                    <button id="format" class="btn btn-primary btn-wide">Format</button>
+                    <button id="clear" class="btn btn-primary">Clear</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        PYFT {{ version }} |
+        <a href="{{ url }}" target="_blank">Github</a> |
+        {{ author_email }}
+    </footer>
+{% endblock %}
