@@ -2,7 +2,7 @@
 파이썬 코드를 스타일에 맞추어 아름답게 변환해주는 온라인 포맷터 입니다. 
 구글의 오픈소스인 YAPF(Github)를 활용하여 구현하였습니다.
 
-![Image](static/v1.0.0.png)
+![Image](https://user-images.githubusercontent.com/32844298/33494810-e424a3c2-d707-11e7-934e-241756c1387d.png)
 
 homepage: [http://pyformatter.com](http://pyformatter.com)
 
