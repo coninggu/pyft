@@ -18,12 +18,12 @@ body {
 .container {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #ffffff;
     border-radius: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
 
+    background-color: #293846;
     background-image: radial-gradient(farthest-side ellipse at 30% 0, #293846 20%, #141C23);
     background-image: -webkit-radial-gradient(10% 0, farthest-side ellipse, #293846 30%, #141C23);
     background-image: -moz-radial-gradient(10% 0, farthest-side ellipse, #293846 30%, #141C23);
