@@ -1,0 +1,9 @@
+## [1.0.1] - 2017.12.10
+### Added
+- layout.html 에 meta X-UA-Compatible 추가.
+
+### Changed
+- settings.SERVER_TIMEOUT의 기본값을 10초로 변경.
+
+### Fixed
+- settings.SERVER_PROCESS를 최소 1개로 실행.
