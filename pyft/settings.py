@@ -2,7 +2,7 @@
 import os
 import multiprocessing
 
-DEBUG = False
+DEBUG = True
 
 DEFAULT_STYLE = 'pep8'
 """ reformat 기본 코드 스타일.
@@ -12,7 +12,7 @@ DEFAULT_STYLE = 'pep8'
 Since version 1.0.0
 """
 
-SERVER_PROCESS = multiprocessing.cpu_count() / 2
+SERVER_PROCESS = int(multiprocessing.cpu_count() / 2) or 1
 """ 서버의 프로세스 개수.
 
 개발(dev) 모드에서는 값을 무시하고 1개로 고정한다.
@@ -38,7 +38,7 @@ SERVER_PORT = 8000
 Since version 1.0.0
 """
 
-SERVER_TIMEOUT = 30
+SERVER_TIMEOUT = 10
 """ POST 요청을 처리하는데 소요되는 최대 시간(초).
 
 Since version 1.0.0
